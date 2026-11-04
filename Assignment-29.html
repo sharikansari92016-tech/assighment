@@ -1,0 +1,79 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 29 - Hero Section</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 400px;
+            padding: 80px 30px;
+            background: #dbeafe;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            background: #93c5fd;
+            top: 30px;
+            right: 40px;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="circle"></div>
+
+        <div class="hero-content">
+            <h1>Welcome to My Website</h1>
+            <p>I am a BCA AI student learning web development and creating useful projects.</p>
+            <a href="#" class="btn">Explore Projects</a>
+        </div>
+    </section>
+
+</body>
+</html>
+```

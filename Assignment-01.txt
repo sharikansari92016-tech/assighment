@@ -1,0 +1,3 @@
+Assignment 1: What Happens Between Typing a URL and Seeing a Webpage?
+
+When we type a URL into a web browser and press Enter, the browser uses DNS to find the IP address of the website's server. It then sends a request to the server. The server sends back files such as HTML, CSS, JavaScript, and images. The browser processes these files and displays the webpage on the screen.

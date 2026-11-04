@@ -1,0 +1,9 @@
+Assignment 2: Setup Proof
+Required screenshot: show VS Code installed, Node.js version, and Live Server extension installed in VS Code.
+Your earlier screenshots may be inside the existing screenshot folder. Use a real screenshot of your setup; do not use a fabricated image as proof.
+Suggested terminal commands to show Node.js:
+node -v
+npm -v
+In VS Code Extensions, show Live Server installed.
+Save/copy your actual screenshot into the project folder as:
+Assignment-02-Setup-Proof.png

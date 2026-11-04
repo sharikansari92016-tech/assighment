@@ -1,0 +1,5 @@
+Assignment 4: Git Practice
+
+Git is a version control system used to track changes in files.
+GitHub is an online platform for hosting Git repositories.
+Meaningful commits describe the changes made to a project.

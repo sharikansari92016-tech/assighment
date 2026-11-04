@@ -1,0 +1,145 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 38 - Dashboard Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 70px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main";
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background: #1e293b;
+            color: white;
+            padding: 22px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #334155;
+            color: white;
+            padding: 25px 15px;
+        }
+
+        .sidebar p {
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        .sidebar p:hover {
+            background: #475569;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px #00000010;
+        }
+
+        .card h2 {
+            color: #2563eb;
+        }
+
+        @media (max-width: 700px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+                grid-template-rows: auto auto 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "main";
+            }
+
+            .sidebar {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                padding: 10px;
+            }
+
+            .sidebar p {
+                margin: 0;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+
+        <header class="header">
+            My Dashboard
+        </header>
+
+        <aside class="sidebar">
+            <p>Home</p>
+            <p>Projects</p>
+            <p>Reports</p>
+            <p>Settings</p>
+        </aside>
+
+        <main class="main">
+            <h1>Dashboard Overview</h1>
+            <p>Welcome to your student dashboard.</p>
+
+            <div class="cards">
+                <div class="card">
+                    <h2>12</h2>
+                    <p>Total Projects</p>
+                </div>
+
+                <div class="card">
+                    <h2>8</h2>
+                    <p>Completed Tasks</p>
+                </div>
+
+                <div class="card">
+                    <h2>4</h2>
+                    <p>Pending Tasks</p>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+</body>
+</html>
+```

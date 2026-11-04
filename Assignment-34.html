@@ -1,0 +1,149 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 34 - Navbar and Hero</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px 8%;
+            background: #0f172a;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero section */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            padding: 70px 8%;
+            background: #eff6ff;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #1d4ed8;
+        }
+
+        .hero p {
+            line-height: 1.7;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #bfdbfe;
+            border-radius: 20px;
+            font-size: 90px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .hero {
+                flex-direction: column;
+                padding: 40px 6%;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero-image {
+                width: 100%;
+                min-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">TechSpace</div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Assignment-23.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Build Your Digital Future</h1>
+                <p>
+                    Explore technology, learn web development,
+                    and create projects that turn your ideas into reality.
+                </p>
+                <a href="Assignment-30.html" class="button">View My Profile</a>
+            </div>
+
+            <div class="hero-image" aria-label="Laptop illustration">
+                💻
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+```

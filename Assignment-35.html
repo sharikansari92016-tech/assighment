@@ -1,0 +1,127 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 35 - Flexbox Landing Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+            color: #1e293b;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #0f172a;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .landing {
+            min-height: 75vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 35px;
+            padding: 60px 8%;
+            background: #e0e7ff;
+        }
+
+        .content {
+            flex: 1 1 280px;
+        }
+
+        .content h1 {
+            font-size: clamp(32px, 5vw, 52px);
+            color: #3730a3;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 13px 24px;
+            background: #4f46e5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .visual {
+            flex: 1 1 250px;
+            min-height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #c7d2fe;
+            border-radius: 25px;
+            font-size: 100px;
+        }
+
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .landing {
+                text-align: center;
+                padding: 35px 6%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">CodeSpace</div>
+        <a href="index.html">My Website</a>
+    </header>
+
+    <main>
+        <section class="landing">
+            <div class="content">
+                <h1>Turn Ideas Into Reality</h1>
+                <p>
+                    Learn coding, explore new technologies,
+                    and build your future with creative projects.
+                </p>
+                <a href="Assignment-30.html" class="button">
+                    Explore Profile
+                </a>
+            </div>
+
+            <div class="visual" aria-label="Laptop illustration">
+                💻
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
+```

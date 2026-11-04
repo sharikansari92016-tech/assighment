@@ -1,0 +1,11 @@
+Assignment 22: CSS Selector Types
+
+The stylesheet style.css uses these selector types:
+1. Element selector: body, h1
+2. Class selector: .highlight
+3. ID selector: #about
+4. Descendant selector: nav a
+5. Pseudo-class selector: a:hover
+
+Open index.html with Live Server and test the page. Make sure index.html links style.css in its head:
+<link rel="stylesheet" href="style.css">

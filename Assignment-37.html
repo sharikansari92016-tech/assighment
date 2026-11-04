@@ -1,0 +1,110 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 37 - Responsive Product Grid</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #f8fafc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e293b;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .product {
+            padding: 22px;
+            background: white;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 4px 14px #00000012;
+        }
+
+        .product-icon {
+            font-size: 55px;
+        }
+
+        .product h2 {
+            color: #334155;
+        }
+
+        .price {
+            color: #15803d;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .product button {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 7px;
+            background: #2563eb;
+            color: white;
+            cursor: pointer;
+        }
+
+        .product button:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Products</h1>
+
+    <main class="product-grid">
+        <article class="product">
+            <div class="product-icon" aria-hidden="true">🎧</div>
+            <h2>Headphones</h2>
+            <p>Comfortable headphones for daily use.</p>
+            <p class="price">₹999</p>
+            <button type="button">View Details</button>
+        </article>
+
+        <article class="product">
+            <div class="product-icon" aria-hidden="true">⌚</div>
+            <h2>Smart Watch</h2>
+            <p>A watch for your everyday activities.</p>
+            <p class="price">₹1,499</p>
+            <button type="button">View Details</button>
+        </article>
+
+        <article class="product">
+            <div class="product-icon" aria-hidden="true">🎒</div>
+            <h2>Backpack</h2>
+            <p>A useful bag for college and travel.</p>
+            <p class="price">₹799</p>
+            <button type="button">View Details</button>
+        </article>
+
+        <article class="product">
+            <div class="product-icon" aria-hidden="true">⌨️</div>
+            <h2>Keyboard</h2>
+            <p>A keyboard for your computer setup.</p>
+            <p class="price">₹1,199</p>
+            <button type="button">View Details</button>
+        </article>
+    </main>
+
+</body>
+</html>
+```

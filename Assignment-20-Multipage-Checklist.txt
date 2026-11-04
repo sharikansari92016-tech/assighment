@@ -1,0 +1,16 @@
+Assignment 20: Multipage HTML Project Checklist
+
+Required pages:
+- index.html (Home)
+- about.html (About)
+- registration.html (Registration)
+- contact.html (Contact)
+
+Check that:
+1. All four files exist in the same project folder.
+2. Every page has a navigation link to Home, About, Registration, and Contact.
+3. Each page has a unique title and viewport meta tag.
+4. All navigation links open the correct local file.
+5. Open index.html with Live Server and test every link.
+
+These page files already appear in your project Explorer. This checklist is extra evidence; do not replace the existing pages unless a link is broken.

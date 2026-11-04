@@ -1,0 +1,55 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 28 - Overflow Fix</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f1f5f9;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border: 2px solid #2563eb;
+            overflow-wrap: anywhere;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .long-text {
+            overflow-wrap: anywhere;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fixing Page Overflow</h1>
+        <p>This page adjusts to different screen sizes.</p>
+
+        <h2>Long Text Example</h2>
+        <p class="long-text">
+            ThisIsAVeryLongWordThatCouldCauseHorizontalOverflowOnSmallScreens
+        </p>
+
+        <p>Container width is responsive and images cannot exceed it.</p>
+    </div>
+</body>
+</html>
+```

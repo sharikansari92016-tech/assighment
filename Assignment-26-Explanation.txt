@@ -1,0 +1,6 @@
+CSS Box Model
+
+1. Content: The actual text or image inside an element.
+2. Padding: Space between content and border.
+3. Border: The line surrounding the padding and content.
+4. Margin: Space outside the border, separating the element from others.

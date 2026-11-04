@@ -1,0 +1,116 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 42 - Responsive Audit</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        main {
+            width: 100%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 25px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            min-width: 0;
+            padding: 22px;
+            background: white;
+            border-radius: 12px;
+            overflow-wrap: anywhere;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #dbeafe;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 500px) {
+            main {
+                padding: 15px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Responsive Design Audit</h1>
+        <p>Testing my website on different screens</p>
+    </header>
+
+    <main>
+        <h2>Audit Checklist</h2>
+
+        <div class="cards">
+            <article class="card">
+                <h3>Layout</h3>
+                <p>Cards adjust to the available screen width.</p>
+            </article>
+
+            <article class="card">
+                <h3>Text</h3>
+                <p>Long text wraps instead of overflowing.</p>
+            </article>
+
+            <article class="card">
+                <h3>Images</h3>
+                <p>Images stay within their containers.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        Assignment 42 — Responsive Audit
+    </footer>
+
+</body>
+</html>
+```

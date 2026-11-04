@@ -1,0 +1,86 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 36 - Photo Gallery</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e293b;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .photo {
+            min-height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            font-size: 65px;
+            background: #dbeafe;
+        }
+
+        .photo:nth-child(2),
+        .photo:nth-child(5) {
+            background: #dcfce7;
+        }
+
+        .photo:nth-child(3),
+        .photo:nth-child(6) {
+            background: #fce7f3;
+        }
+
+        @media (max-width: 700px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            body {
+                padding: 15px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Photo Gallery</h1>
+
+    <main class="gallery">
+        <div class="photo" role="img" aria-label="Mountain">🏔️</div>
+        <div class="photo" role="img" aria-label="Nature">🌳</div>
+        <div class="photo" role="img" aria-label="Sunset">🌅</div>
+        <div class="photo" role="img" aria-label="Ocean">🌊</div>
+        <div class="photo" role="img" aria-label="Flowers">🌸</div>
+        <div class="photo" role="img" aria-label="Forest">🌲</div>
+    </main>
+
+</body>
+</html>
+```

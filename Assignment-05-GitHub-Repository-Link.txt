@@ -1,0 +1,6 @@
+Assignment 5: GitHub Repository Link
+
+Repository:
+https://github.com/Shivamrana01/HTML-CSS-Practical-Assignments
+
+Before submitting, open the link in a browser and confirm that the repository is public or that your teacher has access, and that your assignment files have been pushed.

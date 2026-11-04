@@ -1,0 +1,88 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 31 - Flexbox Menu</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 18px 30px;
+            background: #1e293b;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #38bdf8;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 500px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .menu {
+                justify-content: center;
+                gap: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MyWebsite</div>
+
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="Assignment-23.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="content">
+        <h1>Responsive Flexbox Menu</h1>
+        <p>Resize your browser to see the menu adapt to smaller screens.</p>
+    </main>
+
+</body>
+</html>
+```

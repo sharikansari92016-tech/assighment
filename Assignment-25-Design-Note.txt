@@ -1,0 +1,5 @@
+Assignment 25: Design Choices
+
+The multipage project uses a consistent navy and blue colour palette to make the pages look clear and professional. Arial is used for readable text. Spacing and padding separate content into sections, while borders and rounded corners help important content stand out. Navigation links are kept consistent across Home, About, Registration, and Contact pages. The layout is intended to be simple and easy to use.
+
+Before submission, verify that index.html, about.html, registration.html, and contact.html all link to style.css and that their navigation links work.

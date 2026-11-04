@@ -1,0 +1,98 @@
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1d3557;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 15px;
+    color: white;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    padding: 12px;
+    background-color: #457b9d;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe8a3;
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 0 20px;
+}
+
+/* About section */
+#about {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #457b9d;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+/* Skills section */
+#skills {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+#skills li {
+    margin: 5px 0;
+}
+
+/* Highlight */
+.highlight {
+    background-color: #ffe8a3;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #e9b949;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1d3557;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        padding: 0 12px;
+    }
+}

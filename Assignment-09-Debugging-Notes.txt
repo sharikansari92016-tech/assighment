@@ -1,0 +1,10 @@
+Assignment 9: Debugging Notes
+
+The corrected HTML uses:
+1. A valid DOCTYPE and html element.
+2. A head section with charset, viewport, and title.
+3. Properly nested and closed headings and paragraphs.
+4. An unordered list with each item inside an li element.
+5. Closing tags for the body and html elements.
+
+Note: This is a corrected example because the original supplied buggy file was not available in the current folder.

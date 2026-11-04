@@ -1,0 +1,24 @@
+# Assignment 3: Terminal Navigation Practice
+
+## Commands and Their Uses
+
+1. `pwd` — Displays the current working directory in terminals that support this command.
+2. `cd folder-name` — Moves into a folder.
+3. `cd ..` — Moves to the parent folder.
+4. `dir` — Lists files and folders in Windows Command Prompt or PowerShell.
+5. `mkdir folder-name` — Creates a new folder.
+6. `cls` — Clears the terminal screen in Windows Command Prompt or PowerShell.
+
+## Practice Tasks
+
+- Open the terminal in Visual Studio Code.
+- Display the current directory using `pwd`.
+- List files using `dir`.
+- Create a folder named `Practice`.
+- Move into the `Practice` folder using `cd Practice`.
+- Return to the parent folder using `cd ..`.
+- Clear the terminal using `cls`.
+
+## Conclusion
+
+These commands help me navigate folders, view files, create directories, and work efficiently in the terminal.

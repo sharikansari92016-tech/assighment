@@ -1,0 +1,160 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 39 - Product Grid Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 220px minmax(0, 1fr);
+            grid-template-rows: auto 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content";
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            padding: 22px 30px;
+            background: #0f172a;
+            color: white;
+        }
+
+        aside {
+            grid-area: sidebar;
+            padding: 25px 15px;
+            background: #334155;
+            color: white;
+        }
+
+        aside a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 6px;
+        }
+
+        aside a:hover {
+            background: #475569;
+        }
+
+        main {
+            grid-area: content;
+            min-width: 0;
+            padding: 25px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .product {
+            min-width: 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px #00000010;
+        }
+
+        .product-icon {
+            font-size: 48px;
+        }
+
+        .price {
+            color: #15803d;
+            font-weight: bold;
+        }
+
+        @media (max-width: 650px) {
+            .layout {
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto auto 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "content";
+            }
+
+            aside {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+                padding: 10px;
+            }
+
+            main {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="layout">
+        <header>
+            <h1>TechStore</h1>
+            <p>Explore our products</p>
+        </header>
+
+        <aside>
+            <a href="#products">All Products</a>
+            <a href="#headphones">Electronics</a>
+            <a href="#backpack">Accessories</a>
+        </aside>
+
+        <main>
+            <h2 id="products">Our Products</h2>
+
+            <div class="products">
+                <article class="product" id="headphones">
+                    <div class="product-icon" aria-hidden="true">🎧</div>
+                    <h3>Headphones</h3>
+                    <p>Wireless headphones</p>
+                    <p class="price">₹999</p>
+                </article>
+
+                <article class="product">
+                    <div class="product-icon" aria-hidden="true">⌚</div>
+                    <h3>Smart Watch</h3>
+                    <p>Everyday smartwatch</p>
+                    <p class="price">₹1,499</p>
+                </article>
+
+                <article class="product" id="backpack">
+                    <div class="product-icon" aria-hidden="true">🎒</div>
+                    <h3>Backpack</h3>
+                    <p>College backpack</p>
+                    <p class="price">₹799</p>
+                </article>
+
+                <article class="product">
+                    <div class="product-icon" aria-hidden="true">⌨️</div>
+                    <h3>Keyboard</h3>
+                    <p>Computer keyboard</p>
+                    <p class="price">₹1,199</p>
+                </article>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
+```
